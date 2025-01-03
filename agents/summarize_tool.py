@@ -7,7 +7,7 @@ class SummarizeTool(AgentBase):
     def execute(self, text):
         messages = [
             {"role" : "system" , 
-             "content" : "You are an AI assistant that summarizes medical text" }
+             "content" : "You are an AI assistant that summarizes medical text" },
             {
               "role":"user",
               "content" : (
