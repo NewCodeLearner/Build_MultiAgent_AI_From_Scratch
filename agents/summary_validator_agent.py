@@ -9,14 +9,14 @@ class SummarizeValidatorAgent(AgentBase):
         system_mesage ="You are an export AI assistant that validates the summaries of medical texts"
         user_content = (
             "Given the original summary assess whether the summary accurately capture the key points and is of hight quality.\n"
-            "Provide a brief anlaysis and rate the summary on a scale of 1 to 5,where 5 indicates excellent quality.\n\n"
+            "Provide a brief analysis and rate the summary on a scale of 1 to 5,where 5 indicates excellent quality.\n\n"
             f"Original Text: {original_text}\n\n"
             f"Summary: \n{summary}\n\n"
             "Validation:"
         )
 
         messages = [
-            {"role": "system","content":system_mesage}
+            {"role": "system","content":system_mesage},
             {"role": "user","content":user_content}
         ]
 
