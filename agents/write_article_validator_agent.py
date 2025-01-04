@@ -7,7 +7,7 @@ class WriteArticleValidatorAgent(AgentBase):
     def execute(self,topic,article):
         system_message = "You are an expert AI assistant that validates research articles"
         user_content = f"Given the topic and article ,assess whether the article comprehensivley covers the topic,
-         follows a logical structure and maintains academci standards\n"
+         follows a logical structure and maintains academic standards\n"
         "Provide the brief analysis and rate the article on a scale of 1 to 5 , where 5 indicates excellent quality\n\n"
         f"Topic: {topic}\n\n"
         f"Article: \n {article}\n\n"
